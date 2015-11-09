@@ -1,0 +1,105 @@
+<DOCTYPE html>
+   <html>
+
+      <head>
+         <title>Scripting Expercises</title>
+      </head>
+
+         <body> 
+         	<h1 id= "hmm">Loops</h1>
+         	
+	         	<script>
+            var audi = ["A5", "A6" , "A7"];
+	         	 var benz = ["C300" , "E550" , "S500" ];
+             var cars = ["benz" , "audi"];
+
+	         	 for (var i = 0; i < benz.length; i++) {
+	         	 	console.log("this list contains " + benz[i] + ".");
+	         	 }
+
+             for (var i = 0; i < audi.length; i++) {
+               console.log("this list contains " + audi[i] + ".");
+             }
+
+             //99 bottles song
+
+
+             var bottleCount = 99;
+
+             while ( bottleCount > 0 ) {
+              console.log(bottleCount + "bottles of Root Beer on the Wall" + "!");
+              bottleCount--;
+            }
+
+
+            //varible scope: LOCAL
+           
+          myFunction();
+            document.getElementById("hmm").innerHTML =
+            "I can display " + typeof scopeNmae ;
+
+            function myFunction() {
+              var scopeNmae = "local";
+          }
+          //Glocal scope
+          var scopeName = "global";
+          myFunction();
+
+          function myFunction() {
+              document.getElementById("hmm").innerHTML =
+              "I can display " + scopeName;
+          }
+
+          // var Madam = "Madam ";
+          // if(Madam == madaM) {
+          //   console.log("String is a palindrome");
+
+          // }
+
+         function hasVowels(string){
+          var a = [];
+          a = string.split("")
+          var truth = false;
+          var vowels = ["a", "e", "i", "o", "u"];
+          for(var i = 0; i < a.length; i ++){
+            for(var j = 0; j < vowels.length; j++){
+              if(a[i]== vowels[j]){
+                truth = true;
+                break;
+              }
+            }
+          }
+          if(truth){
+            console.log("There's a vowel.");
+          }
+          else{
+            console.log("No Vowels.");
+          }
+         }
+
+          /*var name = prompt("Enter Your Name");
+          console.log("Thanks" + name);
+          var name = confirm("Click ok,If thats your real name?");
+
+          alert("Thank you..I appreciate It");*/
+
+
+
+        
+          
+
+          
+
+
+
+
+
+
+
+
+             
+                 
+	         	</script>
+         </body>
+
+        </html>

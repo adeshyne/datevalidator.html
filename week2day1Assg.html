@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+<head>
+</head>
+<body>
+    <input type="text" id="poodle" placeholder="insert number">
+    <button onclick="checkNumber()">checkNumber</button>
+    <p id ="complainer"></p>
+
+<script>
+function checkNumber() {
+
+    var poodle = document.getElementById("poodle").value;
+    
+    
+    var complainer = document.getElementById("complainer");
+   
+
+
+    if (poodle<10) {
+        complainer.innerHTML = "this number is less than 10";
+    }
+
+    else if (poodle == 10){
+        complainer.innerHTML = "This number is equal to 10";
+
+    }
+    else if (poodle > 10){
+        complainer.innerHTML = "This number is greater than 10";
+
+    }
+    
+    else {
+        complainer.innerHTML = "Not a number";
+    }
+}
+</script>
+ 
+
+<!-- Assignment two-->
+
+<script>
+var three = 3;
+var seven = 7;
+var number = three + seven;
+console.log(number);
+</script>
+
+<!--Assignment  Three -->
+
+
+<script>
+
+var car = "toyota";
+var plane = "jet";
+var motor = car + plane;
+alert(motor);
+
+</script>
+
+</body>
+</html>
